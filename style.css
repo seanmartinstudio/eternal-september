@@ -97,19 +97,20 @@ p {
   }
 
   h2 {
-    font-size: 1rem;
+    font-size: 1.2rem;
   }
 
   img {
     width: 100%; /* Full width on mobile */
     max-width: 350px; /* Prevents it from being too large */
     padding-left: 0;
+    padding-right: 0;
   }
 
   .info {
     flex-direction: column;
     text-align: left;
     align-items: flex-start;
-    padding: 1rem;
+    padding: 0;
   }
 }
