@@ -103,9 +103,9 @@ p {
 
   img {
     width: 100%; /* Full width on mobile */
-    max-width: 350px; /* Prevents it from being too large */
+    max-width: 300px; /* Prevents it from being too large (was 350)*/
+    
     padding-left: 0;
-    padding-right: 0;
   }
 
   .info {
