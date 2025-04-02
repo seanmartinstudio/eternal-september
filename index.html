@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Eternal September</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="/favicon.png" />
+    <script src="script.js"></script>
+</head>
+<body>
+ 
+
+        <div class="heading-container">
+            <h1>Eternal September</h1>
+            <h2>A web company.</h2>
+        </div>
+
+        <div class="image-container">
+        <img src="80s-computer.jpg">
+        </div>
+  
+<div class="wrap">
+        <div class="info">
+            <p>info@eternalseptember.com</p>
+            <p id="local-time"></p>
+        </div>
+</div>
+
+<style>
+    h2, p {
+      opacity: 0; /* Start fully hidden */
+    }
+  </style>
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  
+  <script>
+    gsap.from("h1", { 
+      x: -300, // Moves in from left
+      opacity: 0, // Fades in
+      duration: 1.5, // Reduced duration to 1.5 seconds for h1
+      ease: "power2.out",
+      onComplete: () => { // After h1 animation completes
+        gsap.to("h2", { 
+          opacity: 1, // Fade in h2
+          duration: 0.8, // Reduced duration for h2
+          ease: "power2.out",
+          onComplete: () => { // After h2 finishes, fade in p
+            gsap.to("p", { 
+              opacity: 1, // Fade in p
+              duration: 0.8, // Reduced duration for p
+              ease: "power2.out"
+            });
+          }
+        });
+      }
+    });
+  </script>
+  
+
+</body>
+</html>

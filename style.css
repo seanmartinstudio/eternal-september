@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap');
+
+* {
+  margin: .5rem;
+  padding: 0px; 
+}
+
+html {
+  font-size: 16px;
+  height: 100%;
+  
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  color: #272727;
+  background-color: #FBFBFB;
+  flex-direction: column;
+}
+
+img {
+  display: flex;
+  padding-left: 200px;
+  padding-top: 50px;
+  width: 400px; /* Makes the image take up the full width of its container */
+}
+
+h1 {
+  font-size: 8rem;
+  font-weight: 800;
+  margin: 0;
+  letter-spacing: -.5rem;
+}
+
+h2 {
+    font-size: 1.3rem;
+    font-weight: 800;
+}
+
+p {
+  font-weight: 800;
+}
+
+
+.heading-container {
+  display: inline-block; /* Shrink-wraps to fit the content */
+  flex-direction: column; /* Stacks h1 and h2 */
+  text-align: right; /* Aligns text inside the div */
+  
+}
+
+
+.info {
+  display: flex;
+  justify-content: space-between;
+  width: 97%;
+  margin: 0;
+  padding-bottom: .5rem;
+}
+
+.wrap {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+
+/* ========================== */
+/* RESPONSIVE DESIGN */
+/* ========================== */
+
+/* Tablet */
+@media (max-width: 1024px) {
+  h1 {
+    font-size: 6rem; /* Scale down */
+    letter-spacing: -0.3rem;
+  }
+
+  img {
+    width: 300px; /* Scale image */
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .heading-container {
+    display: flex;
+    flex-direction: column;
+    text-align: left; /* Ensures text remains left-aligned */
+  }
+
+  h1 {
+    font-size: 4rem; /* Smaller size */
+    letter-spacing: -0.2rem;
+    line-height: 3.5rem;
+    padding-bottom: 1rem;
+  }
+
+  h2 {
+    font-size: 1rem;
+  }
+
+  img {
+    width: 100%; /* Full width on mobile */
+    max-width: 350px; /* Prevents it from being too large */
+    padding-left: 0;
+  }
+
+  .info {
+    flex-direction: column;
+    text-align: left;
+    align-items: flex-start;
+    padding: 1rem;
+  }
+}
