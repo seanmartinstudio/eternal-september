@@ -33,7 +33,7 @@ h1 {
 }
 
 h2 {
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     font-weight: 800;
 }
 
@@ -74,6 +74,7 @@ p {
   h1 {
     font-size: 6rem; /* Scale down */
     letter-spacing: -0.3rem;
+    line-height: 4.5rem;
   }
 
   img {
