@@ -72,12 +72,16 @@ p {
 /* Tablet */
 @media (max-width: 1024px) {
   h1 {
-    font-size: 6rem; /* Scale down */
+    font-size: 6rem;
     letter-spacing: -0.3rem;
   }
 
   img {
-    width: 300px; /* Scale image */
+    width: 300px;
+  }
+
+  .info {
+    padding: 0 1rem; /* Adds equal padding on both sides */
   }
 }
 
@@ -86,11 +90,12 @@ p {
   .heading-container {
     display: flex;
     flex-direction: column;
-    text-align: left; /* Ensures text remains left-aligned */
+    text-align: left;
+    padding: 0 1rem; /* Ensures equal padding */
   }
 
   h1 {
-    font-size: 4rem; /* Smaller size */
+    font-size: 4rem;
     letter-spacing: -0.2rem;
     line-height: 3.5rem;
     padding-bottom: 1rem;
@@ -101,8 +106,8 @@ p {
   }
 
   img {
-    width: 100%; /* Full width on mobile */
-    max-width: 350px; /* Prevents it from being too large */
+    width: 100%;
+    max-width: 350px;
     padding-left: 0;
   }
 
@@ -110,6 +115,7 @@ p {
     flex-direction: column;
     text-align: left;
     align-items: flex-start;
-    padding: 1rem;
+    padding: 0 1rem; /* Ensures equal padding */
   }
 }
+
