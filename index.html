@@ -36,27 +36,31 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
   
   <script>
-    gsap.from("h1", { 
-      x: -300, // Moves in from left
-      opacity: 0, // Fades in
-      duration: 1.5, // Reduced duration to 1.5 seconds for h1
+  window.onload = function () {
+    gsap.set("h1", { x: -300, opacity: 0, visibility: "visible" }); // Ensures it's hidden initially
+  
+    gsap.to("h1", { 
+      x: 0, 
+      opacity: 1, 
+      duration: 1.5, 
       ease: "power2.out",
-      onComplete: () => { // After h1 animation completes
+      onComplete: () => { 
         gsap.to("h2", { 
-          opacity: 1, // Fade in h2
-          duration: 0.8, // Reduced duration for h2
+          opacity: 1, 
+          duration: 0.8, 
           ease: "power2.out",
-          onComplete: () => { // After h2 finishes, fade in p
+          onComplete: () => { 
             gsap.to("p", { 
-              opacity: 1, // Fade in p
-              duration: 0.8, // Reduced duration for p
+              opacity: 1, 
+              duration: 0.8, 
               ease: "power2.out"
             });
           }
         });
       }
     });
-  </script>
+  };
+</script>
 
   
   
